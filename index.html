@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de sesión</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9514dd5057.js" crossorigin="anonymous"></script>
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <nav class="nav-container">
+        <div class="menu-button">
+            <i class="fas fa-bars" id="buttonMenu"></i>
+        </div>
+        <div class="nav-left">
+            <a class="nav-left__logo" href="#">
+                <img src="assets/images/logo.svg" alt="Logo QR Tech">
+                <p>QRTech</p>
+            </a>
+            <ul class="nav-left__list">
+                <li class="nav-left__item"><a class="nav-left__link" href="#">Inicio</a></li>
+                <li class="nav-left__item"><a class="nav-left__link" href="#">Productos</a></li>
+                <li class="nav-left__item"><a class="nav-left__link" href="#">Nosotros</a></li>
+                <li class="nav-left__item"><a class="nav-left__link" href="#">Recursos</a></li>
+                <li class="nav-left__item"><a class="nav-left__link" href="#">Contacto</a></li>
+                <li class="nav-left__item"><a class="nav-left__link" href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button class="nav-button-log">Iniciar sesión</button>
+            <button class="nav-button-sign">Registrarse</button>
+        </div>
+    </nav>
+    <header class="header-container">
+        <div class="header-menu">
+            <div class="header-image">
+                <img class="image__desktop" src="assets/images/qr-login.png" alt="Login con codigo QR">
+            </div>
+            <div class="header-login">
+                <form class="header-login__form" action="index.html" method="POST">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="" id="email">
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="" id="password">
+                    <a class="login-forget-password" href="#">¿Olvidaste tu contraseña?</a>
+                    <button class="nav-button--submit-log" type="submit">Iniciar sesión</button>
+                </form>
+                <div>
+                    <img class="image__responsive" src="assets/images/qr-login-responsive.png"
+                        alt="Login con codigo QR">
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
